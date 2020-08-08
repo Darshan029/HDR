@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AboutUs">
+    android:layout_height="match_parent">
+
 
     <View
-        android:id="@+id/view3"
-        android:layout_width="wrap_content"
+        android:id="@+id/aboutTv"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -16,145 +16,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view7"
-        android:layout_width="wrap_content"
+        android:id="@+id/aboutTv2"
+        android:layout_width="0dp"
         android:layout_height="100dp"
         android:background="@drawable/ic_wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view3" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view7">
-
-        <TextView
-            android:id="@+id/dName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:text="Name : Darshan Vaghasiya" />
-
-        <TextView
-            android:id="@+id/dBranch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="Branch : CE" />
-
-        <TextView
-            android:id="@+id/dEid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="eid : dvaghasiya048@rku.ac.in" />
-
-        <TextView
-            android:id="@+id/dCity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="City : Junagadh" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
-
-        <TextView
-            android:id="@+id/hName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="Name : Hiren Undhad" />
-
-        <TextView
-            android:id="@+id/hBranch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="Branch : CE" />
-
-        <TextView
-            android:id="@+id/hEid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="eid : hundhad87@rku.ac.in" />
-
-        <TextView
-            android:id="@+id/hCity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="City : Junagadh" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-        <TextView
-            android:id="@+id/rName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="Name : Rajan Vasoya" />
-
-        <TextView
-            android:id="@+id/rBranch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="Branch : CE" />
-
-        <TextView
-            android:id="@+id/rEid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="eid : rvasoya09@rku.ac.in" />
-
-        <TextView
-            android:id="@+id/rCity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingBottom="6dp"
-            android:text="City : Rajkot" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/aboutTv" />
 
     <View
-        android:id="@+id/view8"
+        android:id="@+id/view3"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:background="@drawable/ic_wave2"
@@ -162,5 +33,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
